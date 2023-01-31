@@ -23,5 +23,6 @@ module.exports = {
         publicPath: '/dist/',
         hot: true,
         open: true,
+        host: '0.0.0.0',
     }
 }
