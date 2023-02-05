@@ -33,8 +33,8 @@
   right: 0;
   top: 0;
   width: 50vw;
-`,$e=(function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),a=1;a<n;a++)r[a-1]=arguments[a];var l=ye.apply(void 0,[t].concat(r)),o="sc-global-"+Ee(JSON.stringify(l)),i=new Re(l,o);function u(t){var n=oe(),r=ie(),a=(0,e.useContext)(Oe),l=(0,e.useRef)(n.allocateGSInstance(o)).current;return n.server&&s(l,t,n,a,r),(0,e.useLayoutEffect)((function(){if(!n.server)return s(l,t,n,a,r),function(){return i.removeStyles(l,n)}}),[l,t,n,a,r]),null}function s(e,t,n,r,a){if(i.isStatic)i.renderStyles(e,x,n,a);else{var l=p({},t,{theme:be(t,r,u.defaultProps)});i.renderStyles(e,l,n,a)}}return e.memo(u)})`
+`,$e="pages/editor:text",Be=(function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),a=1;a<n;a++)r[a-1]=arguments[a];var l=ye.apply(void 0,[t].concat(r)),o="sc-global-"+Ee(JSON.stringify(l)),i=new Re(l,o);function u(t){var n=oe(),r=ie(),a=(0,e.useContext)(Oe),l=(0,e.useRef)(n.allocateGSInstance(o)).current;return n.server&&s(l,t,n,a,r),(0,e.useLayoutEffect)((function(){if(!n.server)return s(l,t,n,a,r),function(){return i.removeStyles(l,n)}}),[l,t,n,a,r]),null}function s(e,t,n,r,a){if(i.isStatic)i.renderStyles(e,x,n,a);else{var l=p({},t,{theme:be(t,r,u.defaultProps)});i.renderStyles(e,l,n,a)}}return e.memo(u)})`
   body * {
     box-sizing: border-box;
   }
-`,Be=e.createElement(e.Fragment,null,e.createElement($e,null),e.createElement((()=>{const[t,n]=Me("");return e.createElement(e.Fragment,null,e.createElement(De,null,"Markdown Editor"),e.createElement(Fe,null,e.createElement(je,{onChange:e=>{n(e.target.value)},value:t}),e.createElement(Ue,null,"プレビューエリア")))}),null));(0,n.render)(Be,document.getElementById("app"))})()})();
+`,Ve=e.createElement(e.Fragment,null,e.createElement(Be,null),e.createElement((()=>{const[t,n]=Me(localStorage.getItem($e)||"");return e.createElement(e.Fragment,null,e.createElement(De,null,"Markdown Editor"),e.createElement(Fe,null,e.createElement(je,{onChange:e=>{const t=e.target.value;localStorage.setItem($e,t),n(t)},value:t}),e.createElement(Ue,null,"プレビューエリア")))}),null));(0,n.render)(Ve,document.getElementById("app"))})()})();
