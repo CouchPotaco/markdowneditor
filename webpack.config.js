@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+    mode: 'development',
     entry: './src/index.tsx',
     //webpack-dev-serverのホットリロードを有効にするために追加
     watch: true,

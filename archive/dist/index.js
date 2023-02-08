@@ -37,4 +37,4 @@
   body * {
     box-sizing: border-box;
   }
-`,je=e.createElement(e.Fragment,null,e.createElement(Fe,null),e.createElement((()=>{const[t,n]=((t,n)=>{const[r,a]=(0,e.useState)(localStorage.getItem(n)||"");return[r,e=>{a(e),localStorage.setItem(n,e)}]})(0,"pages/editor:text");return e.createElement(e.Fragment,null,e.createElement(Re,null,"Markdown Editor"),e.createElement(Ie,null,e.createElement(Me,{onChange:e=>n(e.target.value),value:t}),e.createElement(De,null,"プレビューエリアgdijaoijo")))}),null));(0,t.render)(je,document.getElementById("app"))})()})();
+`,je=e.createElement(e.Fragment,null,e.createElement(Fe,null),e.createElement((()=>{const[t,n]=((t,n)=>{const[r,a]=(0,e.useState)(localStorage.getItem(n)||"");return[r,e=>{a(e),localStorage.setItem(n,e)}]})(0,"pages/editor:text");return e.createElement(e.Fragment,null,e.createElement(Re,null,"Markdown Editor"),e.createElement(Ie,null,e.createElement(Me,{onChange:e=>n(e.target.value),value:t}),e.createElement(De,null,"プレビューエリア")))}),null));(0,t.render)(je,document.getElementById("app"))})()})();
